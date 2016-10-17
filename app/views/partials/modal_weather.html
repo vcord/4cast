@@ -1,0 +1,28 @@
+<div ng-controller="ModalCtrl">
+     <div ng-controller="GeoCtrl">
+        
+<div class="modal-header">
+<h3 class="modal-title text-center" id="modal-title">{{weatherData.name}} Current Weather</h3>
+</div>
+
+<div class="modal-body" id="modal-body">
+    
+    <div class="weather-bag" style="overflow:hidden;">
+          <h3>{{weatherData.name}}</h3>
+		  <h4>{{weatherData.weather[0].description}}</h4>
+		  
+		  <img src="views/img/therm.svg" class="img-responsive info" width="70">
+          <p class="meta info">{{ToCelcius(weatherData.main.temp)}}º<span>C</span></p>
+		  <div class="sub-meta pull-right">
+		  <h4>Humidity: {{weatherData.main.humidity}}%</h4>
+		  <h4>Wind: {{ToKilometer(weatherData.wind.speed)}}km/h</h4>
+		  </div>
+        </div>
+	 
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-circle btn-green" type="button" ng-click="saveWeather(weatherData)">Save &amp; Close</button>
+</div>
+</div>
+</div>

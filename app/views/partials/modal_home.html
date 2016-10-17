@@ -1,0 +1,18 @@
+<div ng-controller="ModalCtrl">
+<div class="modal-header">
+<h5 class="modal-title text-center text-muted" id="modal-title">Please Provide Your Zip Code or City Name For Weather Forecast:</h5>
+</div>
+    <div ng-controller="GeoformCtrl">
+<div class="modal-body text-center" id="modal-body" >
+    <input type="text" ng-model="asyncSelected" placeholder="Enter Your City,country,zip code etc" uib-typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
+    <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+    <div ng-show="noResults">
+      <i class="glyphicon glyphicon-remove"></i> No Results Found
+    </div>
+   
+</div>
+<div class="modal-footer">
+<button class="btn btn-circle btn-green" type="button" ng-click="showWeather(formGeoLocate)">Show Weather</button>
+</div>
+</div>
+</div>
