@@ -1,10 +1,12 @@
 # 4cast
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+A simple application for readin user's current weather condition and also useful for general weather forecast.
+
+##Usage
+Run `cd dist` from the root directory and run `php -S:3000` then go to you browser and enter `localhost:3000`. Thats All!
 
 ## Build & development
-
+Run `npm install` to installnpm modules for grunt and `bower install` to install bower components.
 Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
