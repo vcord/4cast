@@ -1,6 +1,6 @@
 # 4cast
 
-A simple application for readin user's current weather condition and also useful for general weather forecast.
+A simple application built with Angular Js for reading current weather condition and also useful for general weather forecast.
 
 ##Usage
 Run `cd dist` from the root directory and run `php -S:3000` then go to you browser and enter `localhost:3000`. Thats All!
